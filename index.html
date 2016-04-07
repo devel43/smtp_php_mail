@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Отправка почты через SMTP</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- jQuery connect -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+	<!-- Magnific Popup - плагин всплывающих окон -->
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+
+	<!-- Подключаем обработчик -->
+	<script src="js/mail.js"></script>
+</head>
+<body>
+	
+	<div class="content">
+		<h1>PHP отправка почтового уведомления через SMTP</h1>
+
+		<form id="form" method="post">
+			<input type="text" placeholder="Имя" name="name">
+			<input type="text" placeholder="Email" name="email">
+			<input type="text" placeholder="Телефон" name="phone">
+			<input type="text" placeholder="Тема" name="subject">
+			<textarea name="messenge" cols="30" rows="10" placeholder="Сообщение"></textarea>
+			<button type="submit">Отправить</button>
+		</form>
+	</div>
+
+	<a href="#test-popup" class="open-popup-link">Show inline popup</a>
+
+	<!-- Модальное окно для вывода отчёта об отправке -->
+	<div class="send_modal mfp-hide" id="send_modal">
+		<h2 class="send_modal_text">Спасибо</h2>
+	</div>
+
+	<div id="test-popup" class="white-popup mfp-hide">
+	  Popup content
+	</div>
+	
+</body>
+</html>
